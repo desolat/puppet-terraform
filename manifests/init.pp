@@ -17,7 +17,7 @@ class terraform (
     file { '/tmp/install_terraform.sh':
       ensure  => present,
       mode    => '0744',
-      content => file('profile/install_terraform.sh'),
+      content => file('terraform/install_terraform.sh'),
     }
 
     exec { 'install_terraform.sh':
