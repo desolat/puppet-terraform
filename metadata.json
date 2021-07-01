@@ -4,21 +4,15 @@
   "author": "desolat",
   "summary": "Provision Hashicorp Terraform",
   "license": "MIT",
-  "source": "",
+  "source": "https://github.com/desolat/puppet-terraform.git",
   "dependencies": [
 
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "Debian",
-      "operatingsystemrelease": [
-        "10"
-      ]
-    },
-    {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "18.04"
+        "18.04", "20.04"
       ]
     }
   ],
