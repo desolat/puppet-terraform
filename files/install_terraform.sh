@@ -41,4 +41,4 @@ fi
 echo "Installing Terraform $VERSION_TAG ..."
 curl -sSLO "https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip" 
 unzip -o terraform_${VERSION}_linux_amd64.zip
-mv terraform /usr/local/bin
+mv -f terraform /usr/local/bin
