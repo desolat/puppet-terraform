@@ -21,12 +21,13 @@ class terraform (
     }
 
     exec { 'install_terraform.sh':
-      command => "/tmp/install_terraform.sh ${version}",
-      cwd     => '/tmp',
-      path    => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin',
+      command   => "/tmp/install_terraform.sh ${version}",
+      cwd       => '/tmp',
+      path      => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin',
       #path    => $path,
       #provider => 'shell',
-      require => Package['unzip'],
+      require   => Package['unzip'],
+      logoutput => true,
     }
 
 }
