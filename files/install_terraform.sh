@@ -39,6 +39,6 @@ if [ $VERSION == "latest" ]; then
 fi
 
 echo "Installing Terraform $VERSION ..."
-curl -sSLO "https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip"
+curl -sfSLO "https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip"
 unzip -o terraform_${VERSION}_linux_amd64.zip
 mv -f terraform /usr/local/bin
